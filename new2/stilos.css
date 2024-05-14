@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body{
+    font-family: Arial;
+    font-size: 1rem;   
+}
+
+header{
+    background-color: darkcyan;
+    color: white;
+    position: relative;
+}
+
+h1{
+    text-align: center;    
+    position: relative;
+    margin-bottom: 20px;
+}
+
+nav ul{
+    list-style: none;
+    
+}
+
+nav ul li{
+    display: inline-flex;
+    margin-right: 50px;
+    position: relative;
+    left: 400px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s color cyan;
+}
+
+nav a:hover{
+    color: #666;
+}
+
+nav a:active{
+    color: #f10264;
+}
+
+nav li::after{
+    content: " | ";
+}
+
+nav li::before{
+    content: " | ";
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;   
+}
+
+input , textarea{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button{
+
+    padding: 10px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.6s cyan;
+}
+
+button:hover{
+    background-color: #666;
+}
+
+@media(max-width:300px){
+    form{
+        max-width: 300px;
+    }
+}
+
+@keyframes changecolor{
+    0%{
+        color: #666;
+    }
+    50%{
+        color: #222;
+    }
+    100%{
+        color: violet;
+    }
+}
+
+h1{
+    animation: changecolor 5s infinite;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+#producto{
+    background-color: #222;
+    display: block;
+}
+
+.producto{
+    background-color: #666;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+}
+
+#inicio{
+    background-color: #333;
+}
+
+#servicio{
+    background-color: #444;
+}
+
